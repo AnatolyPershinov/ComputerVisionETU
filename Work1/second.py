@@ -16,7 +16,7 @@ def main():
             ret, frame = cap.read()
             try:
                 frame = cv2.cvtColor(frame, code=cv2.COLOR_BGR2GRAY)
-                fram = cv2.putText(frame, "16.12.2021", (300,270), cv2.FONT_HERSHEY_SIMPLEX, 1, 255, 2)
+                frame = cv2.putText(frame, "16.12.2021", (300,270), cv2.FONT_HERSHEY_SIMPLEX, 1, 255, 2)
             except Exception:
                 cap.release()
                 break
