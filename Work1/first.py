@@ -21,7 +21,7 @@ color_types = {
 
 
 def showimage(image, name, code, scale=1, delay=0): # обработка и вывод изображения
-    new_size = (int(__WIDTH__ * scale),int(__HEIGHT__ * scale))
+    new_size = (int(image.shape[1] * scale), int(image.shape[0] * scale))
     image = cv2.resize(image, new_size)
     if code != 0:
         image = cv2.cvtColor(image, code=code)
