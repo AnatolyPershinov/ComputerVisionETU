@@ -56,3 +56,4 @@ def main():
     showimage(img, "Option4", scale=0.25, code=color_types["GrayScale"], delay=11)
 
 main()
+
